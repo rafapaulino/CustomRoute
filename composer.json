@@ -1,0 +1,43 @@
+{
+    "name": "rafapaulino/customroute",
+    "description": ":description",
+    "license": "license",
+    "authors": [
+        {
+            "name": "author name",
+            "email": "author email",
+            "homepage": "author homepage"
+        }
+    ],
+    "homepage": "https://github.com/rafapaulino/customroute",
+    "keywords": ["Laravel", "CustomRoute"],
+    "require": {
+        "illuminate/support": "~5"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~7.0",
+        "mockery/mockery": "^1.1",
+        "orchestra/testbench": "~3.0",
+        "sempro/phpunit-pretty-print": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "rafapaulino\\CustomRoute\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "rafapaulino\\CustomRoute\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "rafapaulino\\CustomRoute\\CustomRouteServiceProvider"
+            ],
+            "aliases": {
+                "CustomRoute": "rafapaulino\\CustomRoute\\Facades\\CustomRoute"
+            }
+        }
+    }
+}
