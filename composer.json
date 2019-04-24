@@ -1,12 +1,12 @@
 {
     "name": "rafapaulino/customroute",
-    "description": ":description",
-    "license": "license",
+    "description": "Custom routes for laravel",
+    "license": "MIT",
     "authors": [
         {
-            "name": "author name",
-            "email": "author email",
-            "homepage": "author homepage"
+            "name": "Rafael",
+            "email": "rafaclasses@gmail.com",
+            "homepage": "https://rafapaulino.com"
         }
     ],
     "homepage": "https://github.com/rafapaulino/customroute",
