@@ -2,6 +2,8 @@
 
 namespace rafapaulino\CustomRoute;
 
+use Illuminate\Routing\Route;
+
 class CustomRoute
 {
     public function create($name, $middleware = 'auth')
