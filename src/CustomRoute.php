@@ -10,7 +10,7 @@ class CustomRoute
     {
         $controller = ucfirst($name) . 'Controller';
         Route::get($name, $controller . '@index')->name($name . '.index')->middleware($middleware);
-        Route::get($name, $controller . '@home')->name($name . '.home')->middleware($middleware);
+        Route::get($name . '/home', $controller . '@home')->name($name . '.home')->middleware($middleware);
         Route::post($name . '/store', $controller . '@store')->name($name . '.store')->middleware($middleware);
         Route::get($name . '/create', $controller . '@create')->name($name . '.create')->middleware($middleware);
         Route::get($name . '/datatables', $controller . '@datatables')->name($name . '.datatables')->middleware($middleware);
